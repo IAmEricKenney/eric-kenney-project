@@ -1,0 +1,159 @@
+body {
+    color: #40514e;
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+    text-align: center;
+}
+
+h1 {
+    color: #65799b;
+    font-family: 'Sacramento', cursive;
+    font-size: 6rem;
+    margin: 50px auto 0 auto;
+}
+
+h2 {
+    color: #65799b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #555273;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+
+hr {
+    border: none;
+    border-top: 6px dotted #e2eff1;
+    margin: 100px auto;
+    width: 4%;
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    color: #e23e57;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e2eff1;
+}
+
+.astro-img {
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+.bottom-cloud {
+    bottom: 300px;
+    left: 250px;
+    position: absolute;
+}
+
+.bottom-container {
+    background-color: #555273;
+    padding: 50px 0 20px;
+}
+
+.contact-me-button {
+    background: #65799b;
+    background-image: -webkit-linear-gradient(top, #65799b, #59719b);
+    background-image: -moz-linear-gradient(top, #65799b, #59719b);
+    background-image: -ms-linear-gradient(top, #65799b, #59719b);
+    background-image: -o-linear-gradient(top, #65799b, #59719b);
+    background-image: -webkit-gradient(to bottom, #65799b, #59719b);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .contact-me-button:hover {
+    border: none;
+    background: #555273;
+    background-image: -webkit-linear-gradient(top, #555273, #4b4772);
+    background-image: -moz-linear-gradient(top, #555273, #4b4772);
+    background-image: -ms-linear-gradient(top, #555273, #4b4772);
+    background-image: -o-linear-gradient(top, #555273, #4b4772);
+    background-image: -webkit-gradient(to bottom, #555273, #4b4772);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+ }
+
+.contact-me-message {
+    margin: 40px auto 60px;
+    width: 40%;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.intro {
+    margin: auto;
+    width: 30%;
+}
+
+.middle-container {
+    padding: 100px 0;
+}
+
+.profile {
+    padding: 0 0 20px 0;
+}
+
+.profile-pic {
+    border-radius: 100%;
+}
+
+.psmi-img {
+    border-radius: 100%;
+    float: right;
+    margin-left: 30px;
+    width: 20%;
+}
+
+.skills {
+    padding: 20px 0 20px 0;
+}
+
+.skill-row {
+    margin: 100px auto 100px auto;
+    text-align: left;
+    width: 50%;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 30px;
+}
+
+.top-container {
+    background-color: #e2eff1;
+    padding-top: 100px;
+    position: relative;
+}
