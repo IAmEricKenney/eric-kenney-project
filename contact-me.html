@@ -41,6 +41,7 @@
                 }
                 setInterval(timestamp, 500);
             </script>
+            <h2>Contact Me</h2>
 
             <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
@@ -50,21 +51,20 @@
                 <input type="hidden" name="retURL" value="https://erickenney.com/">
                 <input type="hidden" id="lead_source" name="lead_source" value="Web">
 
-                <p><label for="first_name">First Name</label><br>
-                    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required="required">
-                </p>
-
-                <p><label for="last_name">Last Name</label><br>
-                    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required="required"></p>
-
-                <p><label for="email">Email</label><br>
-                    <input id="email" maxlength="80" name="email" size="20" type="text" required="required"></p>
-
-                <p><label for="description">Message</label><br>
-                    <textarea name="description"></textarea></p>
-
+                <label for="first_name" class="form-label">First Name</label>
+                <input class="form-input" id="first_name" maxlength="40" name="first_name" type="text" required="required"><br>
+                <br>
+                <label for="last_name" class="form-label">Last Name</label>
+                <input class="form-input" id="last_name" maxlength="80" name="last_name" size="20" type="text" required="required"><br>
+                <br>
+                <label for="email" class="form-label">Email</label>
+                <input class="form-input" id="email" maxlength="80" name="email" size="20" type="text" required="required"><br>
+                <br>
+                <label for="description" class="form-label">Message</label>
+                <textarea class="form-input" name="description" rows="10"></textarea><br>
+                <hr>
                 <div class="g-recaptcha" data-sitekey="6LdlgQkaAAAAAFMD8EsyjJJ5m6F2ZeaOsop02VcN"></div><br>
-                <input type="submit" name="submit">
+                <input type="submit" name="submit" class="contact-me-button">
 
             </form>
         </div>
