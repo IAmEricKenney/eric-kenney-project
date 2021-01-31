@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio for Eric Kenney">
+    <meta name="author" content="Eric Kenney">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,72 +16,77 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
+    <div class="navbar">
+        <header>
             <nav>
                 <a href="/index.html">Home</a>
-                <a href="/skills.html">Skills</a>
-                <a href="/experience.html">Experience</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/education.html">Education</a>
-                <a href="https://cloudedconsultant.wordpress.com" target="_blank">Blog</a>
+                <a href="/skills.html#skills-top">Skills</a>
+                <a href="/experience.html#experience-top">Experience</a>
+                <a href="/projects.html#projects-top">Projects</a>
+                <a href="/education.html#education-top">Education</a>
+                <a href="/blog.html#blog-top">Blog</a>
                 <a href="/contact-me.html">Contact Me</a>
             </nav>
-        </div>
-    </header>
+        </header>
+    </div>
 
-    <main>
-        <div class="contact-container">
-            <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-            <script src="https://www.google.com/recaptcha/api.js"></script>
-            <script>
-                function timestamp() {
-                    var response = document.getElementById("g-recaptcha-response");
-                    if (response == null || response.value.trim() == "") {
-                        var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
-                        elems["ts"] = JSON.stringify(new Date().getTime());
-                        document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+    <div class="contact-container">
+        <main>
+            <article>
+                <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+                <script src="https://www.google.com/recaptcha/api.js"></script>
+                <script>
+                    function timestamp() {
+                        var response = document.getElementById("g-recaptcha-response");
+                        if (response == null || response.value.trim() == "") {
+                            var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+                            elems["ts"] = JSON.stringify(new Date().getTime());
+                            document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+                        }
                     }
-                }
-                setInterval(timestamp, 500);
-            </script>
-            <h2>Contact Me</h2>
+                    setInterval(timestamp, 500);
+                </script>
+                <h2>Contact Me</h2>
 
-            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-                <input type="hidden" name="captcha_settings"
-                    value="{&quot;keyname&quot;:&quot;eric_kenney&quot;,&quot;fallback&quot;:&quot;true&quot;,&quot;orgId&quot;:&quot;00D3h000003xAbp&quot;,&quot;ts&quot;:&quot;&quot;}">
-                <input type="hidden" name="oid" value="00D3h000003xAbp">
-                <input type="hidden" name="retURL" value="https://erickenney.com/">
-                <input type="hidden" id="lead_source" name="lead_source" value="Web">
+                    <input type="hidden" name="captcha_settings"
+                        value="{&quot;keyname&quot;:&quot;eric_kenney&quot;,&quot;fallback&quot;:&quot;true&quot;,&quot;orgId&quot;:&quot;00D3h000003xAbp&quot;,&quot;ts&quot;:&quot;&quot;}">
+                    <input type="hidden" name="oid" value="00D3h000003xAbp">
+                    <input type="hidden" name="retURL" value="https://erickenney.com/">
+                    <input type="hidden" id="lead_source" name="lead_source" value="Web">
 
-                <label for="first_name" class="form-label">First Name</label>
-                <input class="form-input" id="first_name" maxlength="40" name="first_name" type="text" required="required"><br>
-                <br>
-                <label for="last_name" class="form-label">Last Name</label>
-                <input class="form-input" id="last_name" maxlength="80" name="last_name" size="20" type="text" required="required"><br>
-                <br>
-                <label for="email" class="form-label">Email</label>
-                <input class="form-input" id="email" maxlength="80" name="email" size="20" type="text" required="required"><br>
-                <br>
-                <label for="description" class="form-label">Message</label>
-                <textarea class="form-input" name="description" rows="10"></textarea><br>
-                <hr>
-                <div class="g-recaptcha" data-sitekey="6LdlgQkaAAAAAFMD8EsyjJJ5m6F2ZeaOsop02VcN"></div><br>
-                <input type="submit" name="submit" class="contact-me-button">
+                    <label for="first_name" class="form-label">First Name</label>
+                    <input class="form-input" id="first_name" maxlength="40" name="first_name" type="text"
+                        required="required"><br>
+                    <br>
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input class="form-input" id="last_name" maxlength="80" name="last_name" size="20" type="text"
+                        required="required"><br>
+                    <br>
+                    <label for="email" class="form-label">Email</label>
+                    <input class="form-input" id="email" maxlength="80" name="email" size="20" type="text"
+                        required="required"><br>
+                    <br>
+                    <label for="description" class="form-label">Message</label>
+                    <textarea class="form-input" name="description" rows="10"></textarea><br>
+                    <br>
+                    <div class="g-recaptcha" data-sitekey="6LdlgQkaAAAAAFMD8EsyjJJ5m6F2ZeaOsop02VcN"></div><br>
+                    <input type="submit" name="submit" class="button">
 
-            </form>
-        </div>
-    </main>
+                </form>
+            </article>
+        </main>
+    </div>
 
-    <footer>
-        <div class="bottom-container">
+    <div class="footer-container">
+        <footer>
             <a class="footer-link" href="https://www.linkedin.com/in/iamerickenney/" target="_blank">LinkedIn</a>
             <a class="footer-link" href="https://twitter.com/iamerickenney" target="_blank">Twitter</a>
             <a class="footer-link" href="https://github.com/iamerickenney" target="_blank">GitHub</a>
-            <p class="copyright">&copy;2021, Eric Kenney</p>
-        </div>
-    </footer>
+            <p class="copyright">&copy;2021, Eric Kenney. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 
 </html>
