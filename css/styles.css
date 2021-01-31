@@ -6,6 +6,15 @@ body {
     text-align: center;
 }
 
+nav {
+    background-color: #555273;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
 h1 {
     color: #65799b;
     font-family: 'Sacramento', cursive;
@@ -30,7 +39,7 @@ h3 {
 hr {
     border: none;
     border-top: 6px dotted #e2eff1;
-    margin: 100px auto;
+    margin: 80px auto;
     width: 4%;
 }
 
@@ -39,6 +48,11 @@ p {
 }
 
 a {
+    color: #65799b;
+    text-decoration: none;
+}
+
+footer a {
     color: #e23e57;
     font-family: 'Montserrat', sans-serif;
     margin: 10px 20px;
@@ -52,20 +66,43 @@ a:hover {
 /* Containers */
 .bottom-container {
     background-color: #555273;
-    padding: 50px 0 20px;
+    padding: 50px 0 5px;
+}
+
+.contact-container {
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+.container {
+    margin-top: 80px;
+    padding: 10px 0;
 }
 
 .middle-container {
     padding: 100px 0;
 }
 
+.navbar a {
+    float: left;
+    display: block;
+    color: #eaf6f6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 .top-container {
     background-color: #e2eff1;
-    padding-top: 100px;
+    margin-top: 80px;
     position: relative;
 }
 
 /* Text */
+.about {
+    margin: auto;
+    width: 70%;
+}
 .contact-me-message {
     margin: 40px auto 60px;
     width: 40%;
@@ -82,6 +119,10 @@ a:hover {
     width: 30%;
 }
 
+.lwc {
+    border:0px #ffffff none;
+}
+
 .profile {
     padding: 0 0 20px 0;
 }
@@ -95,6 +136,14 @@ a:hover {
     margin: 100px auto 100px auto;
     text-align: left;
     width: 50%;
+}
+
+#intro-list {
+    line-height: 2;
+    margin: auto;
+    text-align: left;
+    width: 30%;
+
 }
 
 /* Button */
@@ -118,9 +167,9 @@ a:hover {
     display: inline-block;
     cursor: pointer;
     text-align: center;
- }
- 
- .contact-me-button:hover {
+}
+
+.contact-me-button:hover {
     border: none;
     background: #555273;
     background-image: -webkit-linear-gradient(top, #555273, #4b4772);
@@ -132,7 +181,7 @@ a:hover {
     -moz-border-radius: 20px;
     border-radius: 8px;
     text-decoration: none;
- }
+}
 
 /*  Images */
 .astro-img {
