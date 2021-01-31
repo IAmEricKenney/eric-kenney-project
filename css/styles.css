@@ -1,3 +1,4 @@
+/* HTML */
 body {
     color: #40514e;
     font-family: 'Merriweather', serif;
@@ -48,23 +49,55 @@ a:hover {
     color: #e2eff1;
 }
 
-.astro-img {
-    border-radius: 100%;
-    float: left;
-    margin-right: 30px;
-}
-
-.bottom-cloud {
-    bottom: 300px;
-    left: 250px;
-    position: absolute;
-}
-
+/* Containers */
 .bottom-container {
     background-color: #555273;
     padding: 50px 0 20px;
 }
 
+.middle-container {
+    padding: 100px 0;
+}
+
+.top-container {
+    background-color: #e2eff1;
+    padding-top: 100px;
+    position: relative;
+}
+
+/* Text */
+.contact-me-message {
+    margin: 40px auto 60px;
+    width: 40%;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.intro {
+    margin: auto;
+    width: 30%;
+}
+
+.profile {
+    padding: 0 0 20px 0;
+}
+
+
+.skills {
+    padding: 20px 0 20px 0;
+}
+
+.skill-row {
+    margin: 100px auto 100px auto;
+    text-align: left;
+    width: 50%;
+}
+
+/* Button */
 .contact-me-button {
     background: #65799b;
     background-image: -webkit-linear-gradient(top, #65799b, #59719b);
@@ -101,28 +134,17 @@ a:hover {
     text-decoration: none;
  }
 
-.contact-me-message {
-    margin: 40px auto 60px;
-    width: 40%;
+/*  Images */
+.astro-img {
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
 }
 
-.copyright {
-    color: #eaf6f6;
-    font-size: 0.75rem;
-    padding: 20px 0;
-}
-
-.intro {
-    margin: auto;
-    width: 30%;
-}
-
-.middle-container {
-    padding: 100px 0;
-}
-
-.profile {
-    padding: 0 0 20px 0;
+.bottom-cloud {
+    bottom: 300px;
+    left: 250px;
+    position: absolute;
 }
 
 .profile-pic {
@@ -136,24 +158,15 @@ a:hover {
     width: 20%;
 }
 
-.skills {
-    padding: 20px 0 20px 0;
-}
-
-.skill-row {
-    margin: 100px auto 100px auto;
-    text-align: left;
-    width: 50%;
-}
-
 .top-cloud {
     position: absolute;
     right: 300px;
     top: 30px;
 }
 
-.top-container {
-    background-color: #e2eff1;
-    padding-top: 100px;
-    position: relative;
+.yosemite-img {
+    border-radius: 25%;
+    margin: auto;
+    padding-bottom: 20px;
+
 }
